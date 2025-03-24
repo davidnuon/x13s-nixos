@@ -55,6 +55,7 @@ buildLinux {
   defconfig = "johan_defconfig";
 
   kernelPatches = patches;
+  ignoreConfigErrors = true;
 
   extraMeta.branch = source.rev;
 }

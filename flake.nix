@@ -38,7 +38,7 @@
                   inherit inputs;
                 };
                 modules = [
-                  inputs.self.nixosModules.aarch64-linux.default
+                  inputs.self.nixosModules.default
                   (import (./configurations + "/${config}.nix"))
                 ];
               };
